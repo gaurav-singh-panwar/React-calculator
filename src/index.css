@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.Main {
+  width: 300px;
+  /* Adjust the width as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* Reduced the border radius for a smaller appearance */
+  padding: 20px;
+  box-shadow: 8px 16px 16px 0px rgb(208, 105, 105);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Main input {
+  border: 2px solid black;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  /* Make the input fields span the width of the calculator */
+}
+
+.Main .operations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Main .operations button {
+  flex: 1;
+  margin-right: 5px;
+  background-color: black;
+  color: white;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 480px) {
+  .Main {
+    width: 90%;
+    /* Adjust the width for smaller screens */
+  }
 }
